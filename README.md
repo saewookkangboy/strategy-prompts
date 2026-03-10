@@ -1,7 +1,6 @@
 # 전략·마케팅·기획 프롬프트 라이브러리
 
-**Repository description**  
-Copy-paste prompt library for strategy, digital marketing, commerce, and campaign planning—optimized for ChatGPT, Gemini, Perplexity, and Claude. For strategists, marketers, and content planners (1–10 yr).
+**Copy-paste prompt library for strategy, digital marketing, commerce, and campaign planning—optimized for ChatGPT, Gemini, Perplexity, and Claude. For strategists, marketers, and content planners (1–10 yr)**
 
 <img width="2752" height="1536" alt="prompt_thumbnail" src="https://github.com/user-attachments/assets/87d7239c-8900-4af1-ab58-6cde234a16b1" />
 
