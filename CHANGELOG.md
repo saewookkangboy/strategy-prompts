@@ -1,0 +1,60 @@
+# Changelog
+
+## [2.2.0] - 2026-06-09
+
+### Added
+- **Part 8 부록** 21개 — 7도메인 × (프롬프트 엔지니어링 / AI 에이전트 / Fact Checker)
+  - 전략 8-1~8-3, 마케팅 8-4~8-6, 커머스 8-7~8-9, 기획 8-10~8-12
+  - PR 8-13~8-15, 데이터 8-16~8-18, 조직 8-19~8-21
+- INDEX Part 8 도메인별 매트릭스·활용 패턴
+- README 부록 안내·빠른 선택 가이드 확장
+
+### Changed
+- 프레임워크 총 **36개 → 57개** (부록 21)
+- verify.sh: 57섹션·114 코드펜스·Part 8 검증
+
+## [2.1.0] - 2026-06-09
+
+### Added
+- **Part 6** 데이터·분석 3개 (6-1 GA4, 6-2 A/B, 6-3 대시보드 스토리텔링)
+- **Part 7** 조직·실행 3개 (7-1 OKR, 7-2 스테이크홀더, 7-3 변화관리)
+- **5-9** 커뮤니케이션 규제·컴플라이언스 체크 (표시광고법·개인정보·업종별)
+- `custom-instructions/` — 모델별 시스템 프롬프트 4종
+- `guides/INPUT_CHECKLIST.md` — Part별 입력 품질 체크리스트
+- `guides/NOTION_OBSIDIAN.md` — Notion/Obsidian 임포트 가이드
+- `examples/before-after.md` — 입력 Before/After 예시
+- `testing/GOLDEN_SAMPLES.md` — 4모델 골든 샘플 테스트·루브릭
+- 워크플로: 데이터 인사이트 체인, OKR·실행 체인, PR 규제 체크 단계
+
+### Changed
+- 프레임워크 총 **29개 → 36개**
+- README 빠른 선택 가이드·활용 대상 확장
+- verify.sh: Part 6·7·5-9 검증, 신규 문서 체크
+
+## [2.0.0] - 2026-06-09
+
+### Added
+- Part 5 PR 커뮤니케이션 프레임워크 8개 (5-1 ~ 5-8)
+- 단일 소스 본문: `prompts/ko/body.md`, `prompts/ko/body-perplexity.md`
+- 빌드·검증 스크립트: `scripts/build-prompts.sh`, `scripts/verify.sh`
+- `STYLE_GUIDE.md`, `INDEX.md`, `CONTRIBUTING.md`, `LICENSE`
+- `workflows/WORKFLOWS.md` (프롬프트 체인·출력 검증)
+- `examples/sample-input.md` (채워진 입력 예시)
+- `presets/INDUSTRY_PRESETS.md` (업종 프리셋)
+
+### Changed
+- 전체 프롬프트 **한국어 해요체**로 전환
+- 플레이스홀더 **한글화**
+- 권장 모델 업데이트: GPT-5.5, Claude Opus 4.8, Gemini 3.5 Flash, Perplexity Pro
+- README 전면 개편 (PR 도메인, v2 구조, 빠른 선택 가이드)
+- ChatGPT·Claude 본문 중복 → 단일 소스 + 모델별 가이드만 분리
+
+### Fixed
+- README 폴더명 불일치 (`strategy-prompts-repo` → `strategy-prompts`)
+- LICENSE 파일 누락
+
+## [1.0.0] - 2026-03-10
+
+### Added
+- Part 1~4 프롬프트 21개 (ChatGPT, Gemini, Perplexity, Claude)
+- README (한·영)
