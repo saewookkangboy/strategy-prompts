@@ -2,6 +2,8 @@
 
 ## [2.2.0] - 2026-06-09
 
+Merged via [PR #1](https://github.com/saewookkangboy/strategy-prompts/pull/1) into `main` (`850467b`). Release: [v2.2.0](https://github.com/saewookkangboy/strategy-prompts/releases/tag/v2.2.0).
+
 ### Added
 - **Part 8 부록** 21개 — 7도메인 × (프롬프트 엔지니어링 / AI 에이전트 / Fact Checker)
   - 전략 8-1~8-3, 마케팅 8-4~8-6, 커머스 8-7~8-9, 기획 8-10~8-12
