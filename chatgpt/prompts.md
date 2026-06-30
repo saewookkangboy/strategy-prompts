@@ -1,14 +1,36 @@
 # ChatGPT용 프롬프트 — 전략·마케팅·기획·PR
 
-> **권장 모델**: GPT-5.5 · **버전**: v2.2.0
+> **권장 모델**: `gpt-5.5` · **라이브러리**: v2.3.0  
+> 공식: [OpenAI Prompting](https://developers.openai.com/api/docs/guides/prompting)
 
-아래 블록 중 **필요한 하나만** 복사해 ChatGPT에 붙여넣고, `[ ]` 안을 본인 상황으로 채워 사용해 주세요.
+아래 블록 중 **필요한 하나만** 복사해 ChatGPT에 붙여넣고, `[ ]` 안을 채워 사용해 주세요.
 
-### 사용 가이드
-- 한 번에 **프레임워크 1개**만 사용하는 것을 권장해요.
-- `[ ]` 플레이스홀더를 먼저 채운 뒤 실행하면 결과가 좋아요.
-- 답변이 길면 마지막에 "각 항목을 표로 정리해 주세요"를 추가해 보세요.
-- 연속 분석은 `workflows/WORKFLOWS.md`의 워크플로를 참고해 주세요.
+### 사용 가이드 (GPT-5.5 공식 최적화)
+
+| 구분 | 넣는 위치 |
+|------|----------|
+| **역할·톤·형식** | [custom-instructions/chatgpt.md](../custom-instructions/chatgpt.md) → Custom Instructions |
+| **프롬프트 블록 + 채운 `[ ]`** | 채팅 입력(input) |
+| **수치·표·이전 LLM 답변** | input **맨 위**에 붙이기 |
+
+- **Outcome-first**: 블록 위에 "이번에 결정할 것: …" 한 줄을 적어 주세요.
+- **한 번에 프레임워크 1개**만 — 여러 Part 섞지 않기.
+- 답변 후 **Part 8 Fact Checker**(같은 도메인 8-x3) 권장.
+
+### 카테고리별 추천 (GPT-5.5)
+
+| Part | 추천 ID | 팁 |
+|------|---------|-----|
+| 1 전략 | 1-1, 1-7, **1-12** | 이전 단계 output → 다음 input |
+| 2 마케팅 | 2-1, 2-3 | KPI·예산 숫자를 input 첫 단락 |
+| 3 커머스 | 3-1, 3-2 | 채널 비중·전환율 필수 |
+| 4 기획 | 4-1 | 4-2→4-3은 **메시지 분리** |
+| 5 PR | 5-2, 5-9 | 팩트만 input; 규제는 별도 턴 |
+| 6 데이터 | 6-1, 6-3 | "없는 수치 생성 금지"를 Instructions에 |
+| 7 조직 | 7-1 | KR 측정식·기한 명시 |
+| 8 부록 | 8-x1, 8-x2 | Agent는 단계·중단 조건 명시 |
+
+상세: [guides/MODEL_PROMPT_GUIDELINES.md](../guides/MODEL_PROMPT_GUIDELINES.md) · [guides/CATEGORY_MODEL_TIPS.md](../guides/CATEGORY_MODEL_TIPS.md)
 
 ---
 

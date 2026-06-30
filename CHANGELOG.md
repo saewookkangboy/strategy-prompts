@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.3.0] - 2026-06-09
+
+### Added
+- `guides/MODEL_PROMPT_GUIDELINES.md` — ChatGPT 5.5 · Claude Opus 4.8 · Gemini 3.5 Flash 공식 프롬프트 가이드
+- `guides/CATEGORY_MODEL_TIPS.md` — Part 1~8 카테고리별 3모델 최적화 표
+
+### Changed
+- `chatgpt|claude|gemini/prompts.md` 상단: 공식 문서 링크, instructions/input 분리, **카테고리별 추천 표**
+- `custom-instructions/` — 3모델 공식 원칙 반영 (outcome-first, XML, System Instruction, effort/thinking)
+- `scripts/verify.sh` — 가이드 문서·헤더 검증 항목 추가
+
 ## [2.2.0] - 2026-06-09
 
 Merged via [PR #1](https://github.com/saewookkangboy/strategy-prompts/pull/1) into `main` (`850467b`). Release: [v2.2.0](https://github.com/saewookkangboy/strategy-prompts/releases/tag/v2.2.0).

@@ -1,14 +1,48 @@
 # Gemini용 프롬프트 — 전략·마케팅·기획·PR
 
-> **권장 모델**: Gemini 3.5 Flash · **버전**: v2.2.0
+> **권장 모델**: `gemini-3.5-flash` · **라이브러리**: v2.3.0  
+> 공식: [Prompt design strategies](https://ai.google.dev/gemini-api/docs/prompting-strategies) · [Gemini 3.5 Flash](https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash)
 
-아래 블록 중 **필요한 하나만** 복사해 Gemini에 붙여넣고, `[ ]` 안을 본인 상황으로 채워 사용해 주세요.
+아래 블록 중 **필요한 하나만** 복사해 Gemini에 붙여넣고, `[ ]` 안을 채워 사용해 주세요.
 
-### 사용 가이드
-- 빠른 초안이 필요할 때 활용하기 좋아요.
-- 답변 시 **"표와 불릿으로 정리해 줘"**를 추가하면 활용도가 높아져요.
-- 복잡한 분석은 Thinking 모드를 권장해요.
-- 연속 분석은 `workflows/WORKFLOWS.md`의 워크플로를 참고해 주세요.
+### 사용 가이드 (Gemini 3.5 Flash 공식 최적화)
+
+| 구분 | 넣는 위치 |
+|------|----------|
+| **페르소나·해요체·표 출력** | [custom-instructions/gemini.md](../custom-instructions/gemini.md) → System Instruction |
+| **긴 문서·GA4·표** | user 메시지 **앞** |
+| **프롬프트 블록** | user 메시지 **맨 뒤** + "위 정보를 바탕으로…" |
+
+- **Thinking**: 단순 초안 low · 분석·합성 medium~high.
+- **Temperature**: API 사용 시 기본 **1.0** 유지 (공식 권장).
+- PR·규제(5-9): **제약·금지 표현**을 지시문 **맨 끝**에 한 번 더.
+- 표·불릿 출력을 명시하면 Gemini에 특히 잘 맞아요.
+
+### 구조 예시
+
+    ## 맥락
+    [채운 [ ] 요약]
+
+    ## 과제
+    (프롬프트 블록)
+
+    ## 제약
+    - 해요체, 번호 항목 순서 유지, 표·불릿 출력
+
+### 카테고리별 추천 (Gemini 3.5 Flash)
+
+| Part | 추천 ID | 팁 |
+|------|---------|-----|
+| 1 전략 | 1-1, 1-7 | 빠른 초안 · thinking medium |
+| 2 마케팅 | 2-1, 2-2 | 채널·KPI **표** |
+| 3 커머스 | 3-1~3 | 퍼널 표 |
+| 4 기획 | **4-2** | 아이디어 8~12안 |
+| 5 PR | 5-2 | 헤드라인 3안 · 제약 맨 끝 |
+| 6 데이터 | 6-1 | 데이터 앞 / 질문 뒤 |
+| 7 조직 | 7-1, 7-3 | OKR·로드맵 표 |
+| 8 부록 | **8-x2** Agent | 에이전틱 설계 최적 |
+
+상세: [guides/MODEL_PROMPT_GUIDELINES.md](../guides/MODEL_PROMPT_GUIDELINES.md) · [guides/CATEGORY_MODEL_TIPS.md](../guides/CATEGORY_MODEL_TIPS.md)
 
 ---
 

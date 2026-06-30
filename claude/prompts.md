@@ -1,14 +1,41 @@
 # Claude용 프롬프트 — 전략·마케팅·기획·PR
 
-> **권장 모델**: Claude Opus 4.8 · **버전**: v2.2.0
+> **권장 모델**: `claude-opus-4-8` · **라이브러리**: v2.3.0  
+> 공식: [Claude Prompting](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices) · [Opus 4.8](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-4-8)
 
-아래 블록 중 **필요한 하나만** 복사해 Claude에 붙여넣고, `[ ]` 안을 본인 상황으로 채워 사용해 주세요.
+아래 블록 중 **필요한 하나만** 복사해 Claude에 붙여넣고, `[ ]` 안을 채워 사용해 주세요.
 
-### 사용 가이드
-- 긴 맥락(데이터, 분석 결과)을 함께 붙여넣으면 추론 품질이 높아져요.
-- 역할 + 출력 항목 형식을 잘 따르니, 프롬프트를 그대로 쓰는 것을 권장해요.
-- 필요하면 답변 후 "표나 불릿으로 요약해 주세요"를 추가해 주세요.
-- 연속 분석은 `workflows/WORKFLOWS.md`의 워크플로를 참고해 주세요.
+### 사용 가이드 (Opus 4.8 공식 최적화)
+
+| 구분 | 넣는 위치 |
+|------|----------|
+| **역할·톤** | [custom-instructions/claude.md](../custom-instructions/claude.md) → 시스템 프롬프트 |
+| **긴 데이터·이전 답변** | `<data>…</data>` 또는 메시지 **앞부분** |
+| **프롬프트 블록** | `<task>…</task>` 또는 user 메시지 |
+
+- **Adaptive thinking** ON · 복잡 작업(1-12, 5-4, 6-2, 8-x2)은 effort **high~xhigh**.
+- 지시의 **번호 항목·형식을 문자 그대로** 따르게 — 블록을 수정하지 말고 그대로.
+- 체인 시 이전 답변 전체를 `<data>`에 포함.
+
+### XML 래핑 예시
+
+    <context>[회사·의사결정 맥락]</context>
+    <data>[수치·표·이전 LLM 답변]</data>
+    <task>(프롬프트 블록)</task>
+
+### 카테고리별 추천 (Opus 4.8)
+
+| Part | 추천 ID | effort |
+|------|---------|--------|
+| 1 전략 | 1-5, 1-10, **1-12** | high~xhigh |
+| 2~3 | 2-1~3, 3-2 | high |
+| 4 기획 | 4-3 브리프 | medium~high |
+| 5 PR | **5-4** 위기, 5-6 Q&A | xhigh |
+| 6 데이터 | 6-2 A/B, 6-1 | high |
+| 7 조직 | 7-2, 7-3 | high |
+| 8 부록 | 8-x2 Agent | xhigh |
+
+상세: [guides/MODEL_PROMPT_GUIDELINES.md](../guides/MODEL_PROMPT_GUIDELINES.md) · [guides/CATEGORY_MODEL_TIPS.md](../guides/CATEGORY_MODEL_TIPS.md)
 
 ---
 

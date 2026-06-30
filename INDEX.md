@@ -1,7 +1,8 @@
-# 프롬프트 인덱스 (v2.2.0)
+# 프롬프트 인덱스 (v2.3.0)
 
 총 **57개** (본 프레임워크 36 + **부록 21**).  
-입력 품질: [guides/INPUT_CHECKLIST.md](guides/INPUT_CHECKLIST.md)
+입력 품질: [guides/INPUT_CHECKLIST.md](guides/INPUT_CHECKLIST.md)  
+**모델 공식 가이드**: [guides/MODEL_PROMPT_GUIDELINES.md](guides/MODEL_PROMPT_GUIDELINES.md) · **카테고리별 팁**: [guides/CATEGORY_MODEL_TIPS.md](guides/CATEGORY_MODEL_TIPS.md)
 
 ---
 
@@ -134,9 +135,9 @@
 
 ## 모델별 파일
 
-| 모델 | 파일 | 특징 |
-|------|------|------|
-| ChatGPT | [chatgpt/prompts.md](chatgpt/prompts.md) | GPT-5.5, 구조화 출력 |
-| Claude | [claude/prompts.md](claude/prompts.md) | Opus 4.8, 긴 맥락·추론 |
-| Gemini | [gemini/prompts.md](gemini/prompts.md) | 3.5 Flash, 빠른 초안·표 |
-| Perplexity | [perplexity/prompts.md](perplexity/prompts.md) | 검색·출처·최신 데이터 |
+| 모델 | API ID | 파일 | 특징 |
+|------|--------|------|------|
+| ChatGPT | `gpt-5.5` | [chatgpt/prompts.md](chatgpt/prompts.md) | outcome-first, 카테고리별 추천 표 |
+| Claude | `claude-opus-4-8` | [claude/prompts.md](claude/prompts.md) | XML·effort, 긴 맥락·추론 |
+| Gemini | `gemini-3.5-flash` | [gemini/prompts.md](gemini/prompts.md) | 맥락 앞/과제 뒤, 빠른 초안 |
+| Perplexity | Pro | [perplexity/prompts.md](perplexity/prompts.md) | 검색·출처·최신 데이터 |

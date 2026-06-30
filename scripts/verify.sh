@@ -16,7 +16,7 @@ pass() {
   echo "✓ $1"
 }
 
-echo "=== strategy-prompts 검증 (v2.2.0) ==="
+echo "=== strategy-prompts 검증 (v2.3.0) ==="
 echo ""
 
 # 1. 프레임워크 섹션 수 일치 (## N-N. 패턴만 카운트)
@@ -81,6 +81,8 @@ for doc in \
   presets/INDUSTRY_PRESETS.md \
   guides/INPUT_CHECKLIST.md \
   guides/NOTION_OBSIDIAN.md \
+  guides/MODEL_PROMPT_GUIDELINES.md \
+  guides/CATEGORY_MODEL_TIPS.md \
   testing/GOLDEN_SAMPLES.md \
   custom-instructions/README.md; do
   if [ -f "$ROOT/$doc" ]; then
@@ -97,6 +99,24 @@ if [ "$ppl_notes" -eq "$EXPECTED_SECTIONS" ]; then
 else
   fail "perplexity: 검색 안내 ${ppl_notes}개 (기대: ${EXPECTED_SECTIONS})"
 fi
+
+# 8. 모델 헤더 공식 가이드 링크
+for model in chatgpt claude gemini; do
+  if grep -q 'MODEL_PROMPT_GUIDELINES' "$ROOT/$model/prompts.md"; then
+    pass "$model: 공식 가이드 링크 포함"
+  else
+    fail "$model: MODEL_PROMPT_GUIDELINES 링크 누락"
+  fi
+done
+
+# 9. 카테고리별 추천 표 (3모델)
+for model in chatgpt claude gemini; do
+  if grep -q '카테고리별 추천' "$ROOT/$model/prompts.md"; then
+    pass "$model: 카테고리별 추천 표"
+  else
+    fail "$model: 카테고리별 추천 표 누락"
+  fi
+done
 
 echo ""
 if [ "$ERRORS" -eq 0 ]; then

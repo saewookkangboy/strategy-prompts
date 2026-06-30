@@ -1,13 +1,14 @@
 # Perplexity용 프롬프트 — 전략·마케팅·기획·PR
 
-> **권장 모델**: Perplexity Pro (Research) · **버전**: v2.2.0
+> **권장 모델**: Perplexity Pro (Research) · **라이브러리**: v2.3.0
 
-아래 블록 중 **필요한 하나만** 복사해 Perplexity에 붙여넣고, `[ ]` 안을 본인 상황으로 채워 사용해 주세요.
+아래 블록 중 **필요한 하나만** 복사해 Perplexity에 붙여넣고, `[ ]` 안을 채워 사용해 주세요.
 
 ### 사용 가이드
-- 산업명·회사명·시장을 **구체적으로** 넣어 주세요.
-- 각 프롬프트에 검색·출처 안내가 포함되어 있어요. Pro/Research 모드 사용을 권장해요.
-- 연속 분석은 `workflows/WORKFLOWS.md`의 워크플로를 참고해 주세요.
+- 산업명·회사명·시장을 **구체적으로** — 검색 품질에 직결.
+- 각 블록에 **검색·출처 안내**가 포함되어 있어요.
+- 산업·보도·벤치가 필요한 Part: **1-2, 1-6, 2-1, 5-x, 6-1**.
+- ChatGPT·Claude·Gemini 가이드: [guides/MODEL_PROMPT_GUIDELINES.md](../guides/MODEL_PROMPT_GUIDELINES.md)
 
 ---
 

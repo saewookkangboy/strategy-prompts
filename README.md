@@ -1,6 +1,6 @@
 # 전략·마케팅·기획·PR 프롬프트 라이브러리
 
-**v2.2.0** · 한국어 해요체 · 프롬프트 **57개** (본 36 + 부록 21)
+**v2.3.0** · 한국어 해요체 · 프롬프트 **57개** (본 36 + 부록 21)
 
 ChatGPT 5.5, Claude Opus 4.8, Gemini 3.5 Flash, Perplexity Pro에서 그대로 복사해 쓸 수 있게 정리해 둔 모음이에요.
 
@@ -287,12 +287,14 @@ GA4 숫자만 있고 말이 안 나올 때 **6-1**, A/B 결과로 결론 못 내
 
 ## 모델은 이렇게 고르면 돼요
 
-| 모델 | 파일 | 잘 맞는 일 |
-|------|------|-----------|
-| ChatGPT 5.5 | [chatgpt/prompts.md](chatgpt/prompts.md) | 표·섹션 나누기, 마케팅·데이터 리포트 |
-| Claude Opus 4.8 | [claude/prompts.md](claude/prompts.md) | 전략 추론, 긴 문서, PR·위기 문안 |
-| Gemini 3.5 Flash | [gemini/prompts.md](gemini/prompts.md) | 빠른 초안, 아이디어 많이 뽑기 |
-| Perplexity Pro | [perplexity/prompts.md](perplexity/prompts.md) | 산업·보도·벤치 (출처 붙음) |
+| 모델 | API ID | 파일 | 잘 맞는 일 |
+|------|--------|------|-----------|
+| ChatGPT | `gpt-5.5` | [chatgpt/prompts.md](chatgpt/prompts.md) | 표·리포트, outcome-first 구조 |
+| Claude | `claude-opus-4-8` | [claude/prompts.md](claude/prompts.md) | 긴 맥락·추론, 위기·전략 합성 |
+| Gemini | `gemini-3.5-flash` | [gemini/prompts.md](gemini/prompts.md) | 빠른 초안, 아이디어·에이전트 |
+| Perplexity | Pro | [perplexity/prompts.md](perplexity/prompts.md) | 산업·보도·벤치 (출처) |
+
+**공식 가이드 + 카테고리별 팁**: [guides/MODEL_PROMPT_GUIDELINES.md](guides/MODEL_PROMPT_GUIDELINES.md) · [guides/CATEGORY_MODEL_TIPS.md](guides/CATEGORY_MODEL_TIPS.md)
 
 시스템 프롬프트: [custom-instructions/](custom-instructions/) · 모델 비교: [testing/GOLDEN_SAMPLES.md](testing/GOLDEN_SAMPLES.md)
 
@@ -306,6 +308,8 @@ GA4 숫자만 있고 말이 안 나올 때 **6-1**, A/B 결과로 결론 못 내
 | 입력 전 체크 | [guides/INPUT_CHECKLIST.md](guides/INPUT_CHECKLIST.md) |
 | 채운 예시 | [examples/sample-input.md](examples/sample-input.md), [before-after.md](examples/before-after.md) |
 | 업종별 문장 | [presets/INDUSTRY_PRESETS.md](presets/INDUSTRY_PRESETS.md) |
+| **모델 공식 가이드** | [guides/MODEL_PROMPT_GUIDELINES.md](guides/MODEL_PROMPT_GUIDELINES.md) |
+| **카테고리별 3모델 팁** | [guides/CATEGORY_MODEL_TIPS.md](guides/CATEGORY_MODEL_TIPS.md) |
 | Notion/Obsidian | [guides/NOTION_OBSIDIAN.md](guides/NOTION_OBSIDIAN.md) |
 | 수정·기여 | [STYLE_GUIDE.md](STYLE_GUIDE.md), [CONTRIBUTING.md](CONTRIBUTING.md) |
 
