@@ -25,7 +25,7 @@ write_prompt() {
 
 CHATGPT_HEADER='# ChatGPT용 프롬프트 — 전략·마케팅·기획·PR
 
-> **권장 모델**: `gpt-5.6-sol` · **라이브러리**: v2.4.0  
+> **권장 모델**: `gpt-5.6-sol` · **라이브러리**: v2.5.0  
 > 공식: [OpenAI Prompting](https://developers.openai.com/api/docs/guides/prompting) · [GPT-5.6](https://openai.com/index/gpt-5-6/)
 
 아래 블록 중 **필요한 하나만** 복사해 ChatGPT에 붙여넣고, `[ ]` 안을 채워 사용해 주세요.
@@ -60,7 +60,7 @@ CHATGPT_HEADER='# ChatGPT용 프롬프트 — 전략·마케팅·기획·PR
 | 3 커머스 | 3-1, 3-2 | Terra · 채널 비중·전환율 필수 |
 | 4 기획 | 4-1 | Luna→Sol 체인 · 4-2→4-3 **메시지 분리** |
 | 5 PR | 5-2, 5-9 | Sol · 팩트만 input; 규제는 별도 턴 |
-| 6 데이터 | 6-1, 6-3 | Sol · "없는 수치 생성 금지"를 Instructions에 |
+| 6 데이터·리서치 | 6-4~6-7, 6-1·6-3 | Sol · "없는 수치 생성 금지"를 Instructions에 |
 | 7 조직 | 7-1 | Terra · KR 측정식·기한 명시 |
 | 8 부록 | 8-x1, 8-x2 | Sol · Agent는 단계·중단 조건 명시 |
 
@@ -70,7 +70,7 @@ CHATGPT_HEADER='# ChatGPT용 프롬프트 — 전략·마케팅·기획·PR
 
 CLAUDE_HEADER='# Claude용 프롬프트 — 전략·마케팅·기획·PR
 
-> **권장 모델**: `claude-opus-5` · **라이브러리**: v2.4.0  
+> **권장 모델**: `claude-opus-5` · **라이브러리**: v2.5.0  
 > 공식: [Claude Prompting](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices) · [Opus 5](https://www.anthropic.com/research/claude-opus-5)
 
 아래 블록 중 **필요한 하나만** 복사해 Claude에 붙여넣고, `[ ]` 안을 채워 사용해 주세요.
@@ -108,7 +108,7 @@ CLAUDE_HEADER='# Claude용 프롬프트 — 전략·마케팅·기획·PR
 | 2~3 | 2-1~3, 3-2 | high (Sonnet 5 가능) |
 | 4 기획 | 4-3 브리프 | medium~high |
 | 5 PR | **5-4** 위기, 5-6 Q&A | xhigh |
-| 6 데이터 | 6-2 A/B, 6-1 | high |
+| 6 데이터·리서치 | 6-4·6-5, 6-8·6-9, 6-2 | high~xhigh |
 | 7 조직 | 7-2, 7-3 | high |
 | 8 부록 | 8-x2 Agent | xhigh |
 
@@ -118,7 +118,7 @@ CLAUDE_HEADER='# Claude용 프롬프트 — 전략·마케팅·기획·PR
 
 GEMINI_HEADER='# Gemini용 프롬프트 — 전략·마케팅·기획·PR
 
-> **권장 모델**: `gemini-3.7-flash` · **라이브러리**: v2.4.0  
+> **권장 모델**: `gemini-3.7-flash` · **라이브러리**: v2.5.0  
 > 공식: [Prompt design strategies](https://ai.google.dev/gemini-api/docs/prompting-strategies) · [Gemini 3.7 Flash](https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash)
 
 아래 블록 중 **필요한 하나만** 복사해 Gemini에 붙여넣고, `[ ]` 안을 채워 사용해 주세요.
@@ -157,7 +157,7 @@ GEMINI_HEADER='# Gemini용 프롬프트 — 전략·마케팅·기획·PR
 | 3 커머스 | 3-1~3 | 퍼널 표 |
 | 4 기획 | **4-2** | 아이디어 8~12안 · thinking low |
 | 5 PR | 5-2 | 헤드라인 3안 · 제약 맨 끝 |
-| 6 데이터 | 6-1 | 데이터 앞 / 질문 뒤 · 1M 컨텍스트 |
+| 6 데이터·리서치 | 6-1, 6-5 | 데이터 앞 / 질문 뒤 · 1M 컨텍스트 |
 | 7 조직 | 7-1, 7-3 | OKR·로드맵 표 |
 | 8 부록 | **8-x2** Agent | Antigravity·에이전틱 설계 최적 |
 
@@ -167,7 +167,7 @@ GEMINI_HEADER='# Gemini용 프롬프트 — 전략·마케팅·기획·PR
 
 PERPLEXITY_HEADER='# Perplexity용 프롬프트 — 전략·마케팅·기획·PR
 
-> **권장 모델**: Perplexity Pro (Research) · **라이브러리**: v2.4.0
+> **권장 모델**: Perplexity Pro (Research) · **라이브러리**: v2.5.0
 
 아래 블록 중 **필요한 하나만** 복사해 Perplexity에 붙여넣고, `[ ]` 안을 채워 사용해 주세요.
 

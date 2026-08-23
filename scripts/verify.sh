@@ -3,8 +3,8 @@
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
-EXPECTED_SECTIONS=57
-EXPECTED_FENCES=114
+EXPECTED_SECTIONS=63
+EXPECTED_FENCES=126
 ERRORS=0
 
 fail() {
@@ -16,7 +16,7 @@ pass() {
   echo "✓ $1"
 }
 
-echo "=== strategy-prompts 검증 (v2.4.0) ==="
+echo "=== strategy-prompts 검증 (v2.5.0) ==="
 echo ""
 
 # 1. 프레임워크 섹션 수 일치 (## N-N. 패턴만 카운트)
@@ -57,7 +57,7 @@ done
 
 # 5. Part 5~7 핵심 섹션 존재
 for model in chatgpt claude gemini perplexity; do
-  for marker in '^## 5-9\. 커뮤니케이션 규제' '^## 6-3\. 대시보드' '^## 7-3\. 변화관리' '^## 8-21\. \[부록·조직\] Fact Checker'; do
+  for marker in '^## 5-9\. 커뮤니케이션 규제' '^## 6-3\. 대시보드' '^## 6-9\. 슬라이드 인포그래픽' '^## 7-3\. 변화관리' '^## 8-21\. \[부록·조직\] Fact Checker'; do
     if ! grep -qE "$marker" "$ROOT/$model/prompts.md"; then
       fail "$model: $(echo "$marker" | sed 's/\^//g') 누락"
     fi
