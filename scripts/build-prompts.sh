@@ -25,12 +25,20 @@ write_prompt() {
 
 CHATGPT_HEADER='# ChatGPT용 프롬프트 — 전략·마케팅·기획·PR
 
-> **권장 모델**: `gpt-5.5` · **라이브러리**: v2.3.0  
-> 공식: [OpenAI Prompting](https://developers.openai.com/api/docs/guides/prompting)
+> **권장 모델**: `gpt-5.6-sol` · **라이브러리**: v2.4.0  
+> 공식: [OpenAI Prompting](https://developers.openai.com/api/docs/guides/prompting) · [GPT-5.6](https://openai.com/index/gpt-5-6/)
 
 아래 블록 중 **필요한 하나만** 복사해 ChatGPT에 붙여넣고, `[ ]` 안을 채워 사용해 주세요.
 
-### 사용 가이드 (GPT-5.5 공식 최적화)
+### 모델 선택 (GPT-5.6 계열)
+
+| 티어 | API ID | ChatGPT | 이 레포 추천 용도 |
+|------|--------|---------|------------------|
+| **Sol** | `gpt-5.6-sol` | Plus/Pro 기본 · Think 슬라이더 | 1-12 합성, 6-3 리포트, 표·섹션 구조 |
+| **Terra** | `gpt-5.6-terra` | 일상 업무 | 2-1~3, 7-1 OKR, 균형 잡힌 초안 |
+| **Luna** | `gpt-5.6-luna` | Free/Go 기본 · Think 버튼 | 4-2 아이디어, 빠른 MECE·SWOT 초안 |
+
+### 사용 가이드 (GPT-5.6 Sol 공식 최적화)
 
 | 구분 | 넣는 위치 |
 |------|----------|
@@ -39,21 +47,22 @@ CHATGPT_HEADER='# ChatGPT용 프롬프트 — 전략·마케팅·기획·PR
 | **수치·표·이전 LLM 답변** | input **맨 위**에 붙이기 |
 
 - **Outcome-first**: 블록 위에 "이번에 결정할 것: …" 한 줄을 적어 주세요.
+- **Reasoning**: 복잡 분석(1-12, 5-4, 6-2)은 Think 슬라이더 **높음** 또는 Sol + reasoning ON.
 - **한 번에 프레임워크 1개**만 — 여러 Part 섞지 않기.
 - 답변 후 **Part 8 Fact Checker**(같은 도메인 8-x3) 권장.
 
-### 카테고리별 추천 (GPT-5.5)
+### 카테고리별 추천 (GPT-5.6)
 
-| Part | 추천 ID | 팁 |
-|------|---------|-----|
-| 1 전략 | 1-1, 1-7, **1-12** | 이전 단계 output → 다음 input |
-| 2 마케팅 | 2-1, 2-3 | KPI·예산 숫자를 input 첫 단락 |
-| 3 커머스 | 3-1, 3-2 | 채널 비중·전환율 필수 |
-| 4 기획 | 4-1 | 4-2→4-3은 **메시지 분리** |
-| 5 PR | 5-2, 5-9 | 팩트만 input; 규제는 별도 턴 |
-| 6 데이터 | 6-1, 6-3 | "없는 수치 생성 금지"를 Instructions에 |
-| 7 조직 | 7-1 | KR 측정식·기한 명시 |
-| 8 부록 | 8-x1, 8-x2 | Agent는 단계·중단 조건 명시 |
+| Part | 추천 ID | 모델·팁 |
+|------|---------|--------|
+| 1 전략 | 1-1, 1-7, **1-12** | Sol · 이전 output → 다음 input |
+| 2 마케팅 | 2-1, 2-3 | Terra/Sol · KPI·예산 숫자를 input 첫 단락 |
+| 3 커머스 | 3-1, 3-2 | Terra · 채널 비중·전환율 필수 |
+| 4 기획 | 4-1 | Luna→Sol 체인 · 4-2→4-3 **메시지 분리** |
+| 5 PR | 5-2, 5-9 | Sol · 팩트만 input; 규제는 별도 턴 |
+| 6 데이터 | 6-1, 6-3 | Sol · "없는 수치 생성 금지"를 Instructions에 |
+| 7 조직 | 7-1 | Terra · KR 측정식·기한 명시 |
+| 8 부록 | 8-x1, 8-x2 | Sol · Agent는 단계·중단 조건 명시 |
 
 상세: [guides/MODEL_PROMPT_GUIDELINES.md](../guides/MODEL_PROMPT_GUIDELINES.md) · [guides/CATEGORY_MODEL_TIPS.md](../guides/CATEGORY_MODEL_TIPS.md)
 
@@ -61,12 +70,19 @@ CHATGPT_HEADER='# ChatGPT용 프롬프트 — 전략·마케팅·기획·PR
 
 CLAUDE_HEADER='# Claude용 프롬프트 — 전략·마케팅·기획·PR
 
-> **권장 모델**: `claude-opus-4-8` · **라이브러리**: v2.3.0  
-> 공식: [Claude Prompting](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices) · [Opus 4.8](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-4-8)
+> **권장 모델**: `claude-opus-5` · **라이브러리**: v2.4.0  
+> 공식: [Claude Prompting](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices) · [Opus 5](https://www.anthropic.com/research/claude-opus-5)
 
 아래 블록 중 **필요한 하나만** 복사해 Claude에 붙여넣고, `[ ]` 안을 채워 사용해 주세요.
 
-### 사용 가이드 (Opus 4.8 공식 최적화)
+### 모델 선택 (Claude 2026)
+
+| 모델 | API ID | 추천 용도 |
+|------|--------|----------|
+| **Opus 5** | `claude-opus-5` | 1-12 합성, 5-4 위기, 6-2 A/B, 8-x2 Agent |
+| **Sonnet 5** | `claude-sonnet-5` | 2-1~3, 4-2 아이디어, 대량·반복 초안 |
+
+### 사용 가이드 (Opus 5 공식 최적화)
 
 | 구분 | 넣는 위치 |
 |------|----------|
@@ -74,9 +90,9 @@ CLAUDE_HEADER='# Claude용 프롬프트 — 전략·마케팅·기획·PR
 | **긴 데이터·이전 답변** | `<data>…</data>` 또는 메시지 **앞부분** |
 | **프롬프트 블록** | `<task>…</task>` 또는 user 메시지 |
 
-- **Adaptive thinking** ON · 복잡 작업(1-12, 5-4, 6-2, 8-x2)은 effort **high~xhigh**.
+- **Extended thinking** ON · 복잡 작업(1-12, 5-4, 6-2, 8-x2)은 effort **high~xhigh**.
+- **1M 컨텍스트**: 이전 단계 답변·CSV를 `<data>`에 통째로 포함.
 - 지시의 **번호 항목·형식을 문자 그대로** 따르게 — 블록을 수정하지 말고 그대로.
-- 체인 시 이전 답변 전체를 `<data>`에 포함.
 
 ### XML 래핑 예시
 
@@ -84,12 +100,12 @@ CLAUDE_HEADER='# Claude용 프롬프트 — 전략·마케팅·기획·PR
     <data>[수치·표·이전 LLM 답변]</data>
     <task>(프롬프트 블록)</task>
 
-### 카테고리별 추천 (Opus 4.8)
+### 카테고리별 추천 (Opus 5)
 
 | Part | 추천 ID | effort |
 |------|---------|--------|
 | 1 전략 | 1-5, 1-10, **1-12** | high~xhigh |
-| 2~3 | 2-1~3, 3-2 | high |
+| 2~3 | 2-1~3, 3-2 | high (Sonnet 5 가능) |
 | 4 기획 | 4-3 브리프 | medium~high |
 | 5 PR | **5-4** 위기, 5-6 Q&A | xhigh |
 | 6 데이터 | 6-2 A/B, 6-1 | high |
@@ -102,12 +118,12 @@ CLAUDE_HEADER='# Claude용 프롬프트 — 전략·마케팅·기획·PR
 
 GEMINI_HEADER='# Gemini용 프롬프트 — 전략·마케팅·기획·PR
 
-> **권장 모델**: `gemini-3.5-flash` · **라이브러리**: v2.3.0  
-> 공식: [Prompt design strategies](https://ai.google.dev/gemini-api/docs/prompting-strategies) · [Gemini 3.5 Flash](https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash)
+> **권장 모델**: `gemini-3.7-flash` · **라이브러리**: v2.4.0  
+> 공식: [Prompt design strategies](https://ai.google.dev/gemini-api/docs/prompting-strategies) · [Gemini 3.7 Flash](https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash)
 
 아래 블록 중 **필요한 하나만** 복사해 Gemini에 붙여넣고, `[ ]` 안을 채워 사용해 주세요.
 
-### 사용 가이드 (Gemini 3.5 Flash 공식 최적화)
+### 사용 가이드 (Gemini 3.7 Flash 공식 최적화)
 
 | 구분 | 넣는 위치 |
 |------|----------|
@@ -115,8 +131,9 @@ GEMINI_HEADER='# Gemini용 프롬프트 — 전략·마케팅·기획·PR
 | **긴 문서·GA4·표** | user 메시지 **앞** |
 | **프롬프트 블록** | user 메시지 **맨 뒤** + "위 정보를 바탕으로…" |
 
-- **Thinking**: 단순 초안 low · 분석·합성 medium~high.
+- **Thinking**: 단순 초안 **low** · 분석·합성 **medium~high** (기본 medium).
 - **Temperature**: API 사용 시 기본 **1.0** 유지 (공식 권장).
+- **에이전트**: Antigravity·Managed Agents·Spark 연동 시 `gemini-3.7-flash` 기본.
 - PR·규제(5-9): **제약·금지 표현**을 지시문 **맨 끝**에 한 번 더.
 - 표·불릿 출력을 명시하면 Gemini에 특히 잘 맞아요.
 
@@ -131,18 +148,18 @@ GEMINI_HEADER='# Gemini용 프롬프트 — 전략·마케팅·기획·PR
     ## 제약
     - 해요체, 번호 항목 순서 유지, 표·불릿 출력
 
-### 카테고리별 추천 (Gemini 3.5 Flash)
+### 카테고리별 추천 (Gemini 3.7 Flash)
 
 | Part | 추천 ID | 팁 |
 |------|---------|-----|
 | 1 전략 | 1-1, 1-7 | 빠른 초안 · thinking medium |
 | 2 마케팅 | 2-1, 2-2 | 채널·KPI **표** |
 | 3 커머스 | 3-1~3 | 퍼널 표 |
-| 4 기획 | **4-2** | 아이디어 8~12안 |
+| 4 기획 | **4-2** | 아이디어 8~12안 · thinking low |
 | 5 PR | 5-2 | 헤드라인 3안 · 제약 맨 끝 |
-| 6 데이터 | 6-1 | 데이터 앞 / 질문 뒤 |
+| 6 데이터 | 6-1 | 데이터 앞 / 질문 뒤 · 1M 컨텍스트 |
 | 7 조직 | 7-1, 7-3 | OKR·로드맵 표 |
-| 8 부록 | **8-x2** Agent | 에이전틱 설계 최적 |
+| 8 부록 | **8-x2** Agent | Antigravity·에이전틱 설계 최적 |
 
 상세: [guides/MODEL_PROMPT_GUIDELINES.md](../guides/MODEL_PROMPT_GUIDELINES.md) · [guides/CATEGORY_MODEL_TIPS.md](../guides/CATEGORY_MODEL_TIPS.md)
 
@@ -150,7 +167,7 @@ GEMINI_HEADER='# Gemini용 프롬프트 — 전략·마케팅·기획·PR
 
 PERPLEXITY_HEADER='# Perplexity용 프롬프트 — 전략·마케팅·기획·PR
 
-> **권장 모델**: Perplexity Pro (Research) · **라이브러리**: v2.3.0
+> **권장 모델**: Perplexity Pro (Research) · **라이브러리**: v2.4.0
 
 아래 블록 중 **필요한 하나만** 복사해 Perplexity에 붙여넣고, `[ ]` 안을 채워 사용해 주세요.
 

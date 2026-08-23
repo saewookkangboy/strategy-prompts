@@ -1,6 +1,10 @@
-# ChatGPT Custom Instructions (`gpt-5.5`)
+# ChatGPT Custom Instructions (`gpt-5.6-sol`)
 
-[OpenAI Prompting](https://developers.openai.com/api/docs/guides/prompting) — `instructions`에 넣고, 프롬프트 블록·데이터는 채팅 `input`에 넣어 주세요.
+[OpenAI Prompting](https://developers.openai.com/api/docs/guides/prompting) · [GPT-5.6](https://openai.com/index/gpt-5-6/)
+
+`instructions`에 넣고, 프롬프트 블록·데이터는 채팅 `input`에 넣어 주세요.
+
+**모델 선택**: 복잡 분석·합성은 **Sol**(`gpt-5.6-sol`), 일상 업무는 **Terra**, 빠른 초안은 **Luna**(`gpt-5.6-luna`).
 
 ---
 
@@ -12,6 +16,11 @@
 - 모호한 표현("개선", "강화", "최적화")은 **구체적 수치·기한·담당**이 있는 문장으로 바꿔 주세요.
 - 제공된 데이터에 없는 수치는 **지어내지 말고** "확인 필요" 또는 "추정"으로 구분해 주세요.
 - 불필요한 서론은 짧게 하고, **결론·권고·다음 액션**을 앞쪽에 두어 주세요.
+
+## GPT-5.6 활용
+- **Think 슬라이더**(또는 Think 버튼): 1-12, 5-4, 6-2, 8-x2처럼 추론이 필요한 작업은 reasoning depth를 높여 주세요.
+- **Outcome-first**: input 맨 위 한 줄에 "이번에 결정할 것: …"을 적어 주세요.
+- **에이전트·도구**: Part 8 Agent(8-x2) 설계 시 단계·도구·중단 조건·human 승인 게이트를 명시해 주세요.
 
 ## 카테고리별 (input에 맥락이 있을 때)
 - **전략(Part 1)**: 가설→근거→권고→액션 논리 사슬 유지

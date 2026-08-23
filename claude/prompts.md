@@ -1,11 +1,18 @@
 # Claude용 프롬프트 — 전략·마케팅·기획·PR
 
-> **권장 모델**: `claude-opus-4-8` · **라이브러리**: v2.3.0  
-> 공식: [Claude Prompting](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices) · [Opus 4.8](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-4-8)
+> **권장 모델**: `claude-opus-5` · **라이브러리**: v2.4.0  
+> 공식: [Claude Prompting](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices) · [Opus 5](https://www.anthropic.com/research/claude-opus-5)
 
 아래 블록 중 **필요한 하나만** 복사해 Claude에 붙여넣고, `[ ]` 안을 채워 사용해 주세요.
 
-### 사용 가이드 (Opus 4.8 공식 최적화)
+### 모델 선택 (Claude 2026)
+
+| 모델 | API ID | 추천 용도 |
+|------|--------|----------|
+| **Opus 5** | `claude-opus-5` | 1-12 합성, 5-4 위기, 6-2 A/B, 8-x2 Agent |
+| **Sonnet 5** | `claude-sonnet-5` | 2-1~3, 4-2 아이디어, 대량·반복 초안 |
+
+### 사용 가이드 (Opus 5 공식 최적화)
 
 | 구분 | 넣는 위치 |
 |------|----------|
@@ -13,9 +20,9 @@
 | **긴 데이터·이전 답변** | `<data>…</data>` 또는 메시지 **앞부분** |
 | **프롬프트 블록** | `<task>…</task>` 또는 user 메시지 |
 
-- **Adaptive thinking** ON · 복잡 작업(1-12, 5-4, 6-2, 8-x2)은 effort **high~xhigh**.
+- **Extended thinking** ON · 복잡 작업(1-12, 5-4, 6-2, 8-x2)은 effort **high~xhigh**.
+- **1M 컨텍스트**: 이전 단계 답변·CSV를 `<data>`에 통째로 포함.
 - 지시의 **번호 항목·형식을 문자 그대로** 따르게 — 블록을 수정하지 말고 그대로.
-- 체인 시 이전 답변 전체를 `<data>`에 포함.
 
 ### XML 래핑 예시
 
@@ -23,12 +30,12 @@
     <data>[수치·표·이전 LLM 답변]</data>
     <task>(프롬프트 블록)</task>
 
-### 카테고리별 추천 (Opus 4.8)
+### 카테고리별 추천 (Opus 5)
 
 | Part | 추천 ID | effort |
 |------|---------|--------|
 | 1 전략 | 1-5, 1-10, **1-12** | high~xhigh |
-| 2~3 | 2-1~3, 3-2 | high |
+| 2~3 | 2-1~3, 3-2 | high (Sonnet 5 가능) |
 | 4 기획 | 4-3 브리프 | medium~high |
 | 5 PR | **5-4** 위기, 5-6 Q&A | xhigh |
 | 6 데이터 | 6-2 A/B, 6-1 | high |
@@ -891,7 +898,7 @@ PR 목표: [인지 / 평판 / 리드 / 투자 등]
 
 대상 프레임워크: [예: 1-7 SWOT / 1-12 전략 합성 / 직접 작성한 프롬프트]
 현재 프롬프트: [개선할 프롬프트 전문을 붙여 넣어 주세요]
-사용 LLM: [ChatGPT 5.5 / Claude Opus 4.8 / Gemini 3.5 Flash / Perplexity]
+사용 LLM: [ChatGPT GPT-5.6 Sol / Claude Opus 5 / Gemini 3.7 Flash / Perplexity]
 실패 패턴: [모호한 권고, 근거 부족, 항목 누락 등]
 ```
 
@@ -938,7 +945,7 @@ PR 목표: [인지 / 평판 / 리드 / 투자 등]
 
 검증 대상: [LLM 답변·내부 전략 문서·이사회 자료 전문]
 산업·시장: [관련 산업명]
-의사결정 기준일: [예: 2026년 6월]
+의사결정 기준일: [예: 2026년 8월]
 참고 가능 출처: [이미 알고 있는 링크·리포트·공시, 없으면 '없음']
 ```
 

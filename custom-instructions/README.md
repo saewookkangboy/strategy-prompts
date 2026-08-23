@@ -5,9 +5,9 @@
 
 | 모델 | API ID | 파일 |
 |------|--------|------|
-| ChatGPT | `gpt-5.5` | [chatgpt.md](chatgpt.md) |
-| Claude | `claude-opus-4-8` | [claude.md](claude.md) |
-| Gemini | `gemini-3.5-flash` | [gemini.md](gemini.md) |
+| ChatGPT | `gpt-5.6-sol` (Sol/Terra/Luna) | [chatgpt.md](chatgpt.md) |
+| Claude | `claude-opus-5` (Sonnet 5 병행) | [claude.md](claude.md) |
+| Gemini | `gemini-3.7-flash` | [gemini.md](gemini.md) |
 | Perplexity | Pro (Research) | [perplexity.md](perplexity.md) |
 
 프레임워크 본문은 `chatgpt/prompts.md` 등에서 **블록 1개**씩 복사해 사용해 주세요.

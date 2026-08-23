@@ -16,7 +16,7 @@ pass() {
   echo "✓ $1"
 }
 
-echo "=== strategy-prompts 검증 (v2.3.0) ==="
+echo "=== strategy-prompts 검증 (v2.4.0) ==="
 echo ""
 
 # 1. 프레임워크 섹션 수 일치 (## N-N. 패턴만 카운트)

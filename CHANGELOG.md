@@ -1,5 +1,20 @@
 # Changelog
 
+## [2.4.0] - 2026-08-23
+
+### Changed
+- **2026년 8월 기준 3모델 갱신**
+  - ChatGPT: `gpt-5.5` → **GPT-5.6** (`gpt-5.6-sol` / Terra / Luna)
+  - Claude: `claude-opus-4-8` → **`claude-opus-5`** (+ Sonnet 5 병행 가이드)
+  - Gemini: `gemini-3.5-flash` → **`gemini-3.7-flash`**
+- `prompts/ko/body.md` — Part 8 LLM 플레이스홀더·기준일 예시 갱신
+- `custom-instructions/` — 3모델 공식 원칙 반영 (Think 슬라이더, Extended thinking, Antigravity)
+- `guides/MODEL_PROMPT_GUIDELINES.md` · `guides/CATEGORY_MODEL_TIPS.md` — v2.4.0 전면 개정
+- `chatgpt|claude|gemini/prompts.md` 상단 — 티어 선택 표·카테고리별 추천 갱신
+- README · INDEX · STYLE_GUIDE · GOLDEN_SAMPLES — 모델명·추천 용도 갱신
+- `assets/readme/` — [beautify-github-readme](https://github.com/oil-oil/beautify-github-readme) 스킬 반영 SVG 히어로·워크플로·섹션 헤더
+- README 전면 재구성 — Value → Proof → 시작 가이드 → Part 맵 → 모델 표
+
 ## [2.3.0] - 2026-06-09
 
 ### Added

@@ -1,11 +1,11 @@
 # Gemini용 프롬프트 — 전략·마케팅·기획·PR
 
-> **권장 모델**: `gemini-3.5-flash` · **라이브러리**: v2.3.0  
-> 공식: [Prompt design strategies](https://ai.google.dev/gemini-api/docs/prompting-strategies) · [Gemini 3.5 Flash](https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash)
+> **권장 모델**: `gemini-3.7-flash` · **라이브러리**: v2.4.0  
+> 공식: [Prompt design strategies](https://ai.google.dev/gemini-api/docs/prompting-strategies) · [Gemini 3.7 Flash](https://ai.google.dev/gemini-api/docs/models/gemini-3.7-flash)
 
 아래 블록 중 **필요한 하나만** 복사해 Gemini에 붙여넣고, `[ ]` 안을 채워 사용해 주세요.
 
-### 사용 가이드 (Gemini 3.5 Flash 공식 최적화)
+### 사용 가이드 (Gemini 3.7 Flash 공식 최적화)
 
 | 구분 | 넣는 위치 |
 |------|----------|
@@ -13,8 +13,9 @@
 | **긴 문서·GA4·표** | user 메시지 **앞** |
 | **프롬프트 블록** | user 메시지 **맨 뒤** + "위 정보를 바탕으로…" |
 
-- **Thinking**: 단순 초안 low · 분석·합성 medium~high.
+- **Thinking**: 단순 초안 **low** · 분석·합성 **medium~high** (기본 medium).
 - **Temperature**: API 사용 시 기본 **1.0** 유지 (공식 권장).
+- **에이전트**: Antigravity·Managed Agents·Spark 연동 시 `gemini-3.7-flash` 기본.
 - PR·규제(5-9): **제약·금지 표현**을 지시문 **맨 끝**에 한 번 더.
 - 표·불릿 출력을 명시하면 Gemini에 특히 잘 맞아요.
 
@@ -29,18 +30,18 @@
     ## 제약
     - 해요체, 번호 항목 순서 유지, 표·불릿 출력
 
-### 카테고리별 추천 (Gemini 3.5 Flash)
+### 카테고리별 추천 (Gemini 3.7 Flash)
 
 | Part | 추천 ID | 팁 |
 |------|---------|-----|
 | 1 전략 | 1-1, 1-7 | 빠른 초안 · thinking medium |
 | 2 마케팅 | 2-1, 2-2 | 채널·KPI **표** |
 | 3 커머스 | 3-1~3 | 퍼널 표 |
-| 4 기획 | **4-2** | 아이디어 8~12안 |
+| 4 기획 | **4-2** | 아이디어 8~12안 · thinking low |
 | 5 PR | 5-2 | 헤드라인 3안 · 제약 맨 끝 |
-| 6 데이터 | 6-1 | 데이터 앞 / 질문 뒤 |
+| 6 데이터 | 6-1 | 데이터 앞 / 질문 뒤 · 1M 컨텍스트 |
 | 7 조직 | 7-1, 7-3 | OKR·로드맵 표 |
-| 8 부록 | **8-x2** Agent | 에이전틱 설계 최적 |
+| 8 부록 | **8-x2** Agent | Antigravity·에이전틱 설계 최적 |
 
 상세: [guides/MODEL_PROMPT_GUIDELINES.md](../guides/MODEL_PROMPT_GUIDELINES.md) · [guides/CATEGORY_MODEL_TIPS.md](../guides/CATEGORY_MODEL_TIPS.md)
 
@@ -898,7 +899,7 @@ PR 목표: [인지 / 평판 / 리드 / 투자 등]
 
 대상 프레임워크: [예: 1-7 SWOT / 1-12 전략 합성 / 직접 작성한 프롬프트]
 현재 프롬프트: [개선할 프롬프트 전문을 붙여 넣어 주세요]
-사용 LLM: [ChatGPT 5.5 / Claude Opus 4.8 / Gemini 3.5 Flash / Perplexity]
+사용 LLM: [ChatGPT GPT-5.6 Sol / Claude Opus 5 / Gemini 3.7 Flash / Perplexity]
 실패 패턴: [모호한 권고, 근거 부족, 항목 누락 등]
 ```
 
@@ -945,7 +946,7 @@ PR 목표: [인지 / 평판 / 리드 / 투자 등]
 
 검증 대상: [LLM 답변·내부 전략 문서·이사회 자료 전문]
 산업·시장: [관련 산업명]
-의사결정 기준일: [예: 2026년 6월]
+의사결정 기준일: [예: 2026년 8월]
 참고 가능 출처: [이미 알고 있는 링크·리포트·공시, 없으면 '없음']
 ```
 

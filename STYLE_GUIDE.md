@@ -62,9 +62,9 @@
 
 | 파일 | 차이점 |
 |------|--------|
-| `chatgpt/prompts.md` | GPT-5.5 가이드 + 공통 본문 |
-| `claude/prompts.md` | Opus 4.8 가이드 + 공통 본문 |
-| `gemini/prompts.md` | Gemini 3.5 Flash 가이드 + 공통 본문 |
+| `chatgpt/prompts.md` | GPT-5.6 Sol 가이드 + 공통 본문 |
+| `claude/prompts.md` | Opus 5 가이드 + 공통 본문 |
+| `gemini/prompts.md` | Gemini 3.7 Flash 가이드 + 공통 본문 |
 | `perplexity/prompts.md` | Perplexity 가이드 + 검색·출처 문구 포함 본문 |
 
 **본문 단일 소스**: `prompts/ko/body.md` (Perplexity는 `body-perplexity.md`)
