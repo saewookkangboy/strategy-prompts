@@ -16,6 +16,7 @@
 ### Changed
 - 프레임워크 총 **57개 → 63개** (본 36→42 + 부록 21)
 - INDEX · README · INPUT_CHECKLIST · CATEGORY_MODEL_TIPS · INDUSTRY_PRESETS · verify.sh 갱신
+- README [beautify-github-readme](https://github.com/oil-oil/beautify-github-readme) 재적용 — Value → Proof → First use 순서, 한국어 Pure SVG 4종 (`hero` · `chain-proof` · `workflow` · `section-parts`)
 
 ## [2.4.0] - 2026-08-23
 

@@ -1,17 +1,49 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="200" viewBox="0 0 1200 200" role="img" aria-labelledby="title desc">
-  <title id="title">strategy-prompts workflow</title>
-  <desc id="desc">Five-step workflow: custom instructions, copy block, fill placeholders, run LLM, Fact Checker</desc>
-  <rect width="1200" height="200" rx="16" fill="#f6f4f0"/>
-  <rect x="1" y="1" width="1198" height="198" rx="15" fill="none" stroke="#e2ddd4" stroke-width="1"/>
-  <text x="56" y="44" fill="#1a2433" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, sans-serif" font-size="28" font-weight="700">Start in 5 minutes</text>
-  <text x="56" y="72" fill="#6b7280" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, sans-serif" font-size="16">Copy / fill [ ] / run / verify</text>
-  <g transform="translate(56 96)"><rect width="196" height="80" rx="12" fill="#fff" stroke="#d4cfc6"/><text x="20" y="32" fill="#e8a838" font-family="ui-monospace, monospace" font-size="14" font-weight="700">1</text><text x="44" y="32" fill="#1a2433" font-family="-apple-system, sans-serif" font-size="16" font-weight="600">System prompt</text><text x="20" y="58" fill="#6b7280" font-family="-apple-system, sans-serif" font-size="14">custom-instructions/</text></g>
-  <text x="268" y="140" fill="#c4bfb6" font-family="ui-monospace, monospace" font-size="20">-&gt;</text>
-  <g transform="translate(296 96)"><rect width="196" height="80" rx="12" fill="#fff" stroke="#d4cfc6"/><text x="20" y="32" fill="#e8a838" font-family="ui-monospace, monospace" font-size="14" font-weight="700">2</text><text x="44" y="32" fill="#1a2433" font-family="-apple-system, sans-serif" font-size="16" font-weight="600">Copy block</text><text x="20" y="58" fill="#6b7280" font-family="ui-monospace, monospace" font-size="14">chatgpt/ claude/ gemini/</text></g>
-  <text x="508" y="140" fill="#c4bfb6" font-family="ui-monospace, monospace" font-size="20">-&gt;</text>
-  <g transform="translate(536 96)"><rect width="196" height="80" rx="12" fill="#fff" stroke="#e8a838" stroke-width="1.5"/><text x="20" y="32" fill="#e8a838" font-family="ui-monospace, monospace" font-size="14" font-weight="700">3</text><text x="44" y="32" fill="#1a2433" font-family="-apple-system, sans-serif" font-size="16" font-weight="600">Fill [ ]</text><text x="20" y="58" fill="#6b7280" font-family="-apple-system, sans-serif" font-size="14">presets/ examples/</text></g>
-  <text x="748" y="140" fill="#c4bfb6" font-family="ui-monospace, monospace" font-size="20">-&gt;</text>
-  <g transform="translate(776 96)"><rect width="168" height="80" rx="12" fill="#fff" stroke="#d4cfc6"/><text x="20" y="32" fill="#e8a838" font-family="ui-monospace, monospace" font-size="14" font-weight="700">4</text><text x="44" y="32" fill="#1a2433" font-family="-apple-system, sans-serif" font-size="16" font-weight="600">Run LLM</text><text x="20" y="58" fill="#6b7280" font-family="-apple-system, sans-serif" font-size="14">one block only</text></g>
-  <text x="960" y="140" fill="#c4bfb6" font-family="ui-monospace, monospace" font-size="20">-&gt;</text>
-  <g transform="translate(988 96)"><rect width="156" height="80" rx="12" fill="#0c1118" stroke="#2a3544"/><text x="20" y="32" fill="#8fd4a8" font-family="ui-monospace, monospace" font-size="14" font-weight="700">5</text><text x="44" y="32" fill="#f5f0e8" font-family="-apple-system, sans-serif" font-size="16" font-weight="600">Fact Checker</text><text x="20" y="58" fill="#8fa3b8" font-family="ui-monospace, monospace" font-size="14">Part 8 / 8-x3</text></g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="220" viewBox="0 0 1200 220" role="img" aria-labelledby="title desc">
+  <title id="title">strategy-prompts 5분 사용 흐름</title>
+  <desc id="desc">시스템 프롬프트 설정, 블록 복사, 플레이스홀더 채우기, LLM 실행, Fact Checker 검증의 다섯 단계</desc>
+  <rect width="1200" height="220" rx="18" fill="#f4f1eb"/>
+  <rect x="1" y="1" width="1198" height="218" rx="17" fill="none" stroke="#e0dbd2"/>
+  <text x="48" y="48" fill="#1a2433" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif" font-size="30" font-weight="700">5분이면 시작할 수 있어요</text>
+  <text x="48" y="80" fill="#6b7280" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif" font-size="16">복사 · [ ] 채우기 · 실행 · 검증 — 한 번에 프레임워크 하나만</text>
+
+  <!-- steps -->
+  <g transform="translate(48 108)">
+    <rect width="200" height="88" rx="14" fill="#ffffff" stroke="#d8d2c8"/>
+    <text x="18" y="34" fill="#e8a838" font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="700">①</text>
+    <text x="42" y="34" fill="#1a2433" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="17" font-weight="600">시스템 프롬프트</text>
+    <text x="18" y="62" fill="#6b7280" font-family="ui-monospace, Menlo, monospace" font-size="13">custom-instructions/</text>
+  </g>
+  <text x="262" y="160" fill="#c4bfb6" font-family="ui-monospace, monospace" font-size="22">→</text>
+
+  <g transform="translate(292 108)">
+    <rect width="200" height="88" rx="14" fill="#ffffff" stroke="#d8d2c8"/>
+    <text x="18" y="34" fill="#e8a838" font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="700">②</text>
+    <text x="42" y="34" fill="#1a2433" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="17" font-weight="600">블록 1개 복사</text>
+    <text x="18" y="62" fill="#6b7280" font-family="ui-monospace, Menlo, monospace" font-size="13">chatgpt / claude / gemini</text>
+  </g>
+  <text x="506" y="160" fill="#c4bfb6" font-family="ui-monospace, monospace" font-size="22">→</text>
+
+  <g transform="translate(536 108)">
+    <rect width="200" height="88" rx="14" fill="#ffffff" stroke="#e8a838" stroke-width="2"/>
+    <text x="18" y="34" fill="#e8a838" font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="700">③</text>
+    <text x="42" y="34" fill="#1a2433" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="17" font-weight="600">[ ] 채우기</text>
+    <text x="18" y="62" fill="#6b7280" font-family="ui-monospace, Menlo, monospace" font-size="13">presets / examples</text>
+  </g>
+  <text x="750" y="160" fill="#c4bfb6" font-family="ui-monospace, monospace" font-size="22">→</text>
+
+  <g transform="translate(780 108)">
+    <rect width="168" height="88" rx="14" fill="#ffffff" stroke="#d8d2c8"/>
+    <text x="18" y="34" fill="#e8a838" font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="700">④</text>
+    <text x="42" y="34" fill="#1a2433" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="17" font-weight="600">LLM 실행</text>
+    <text x="18" y="62" fill="#6b7280" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="14">한 블록만</text>
+  </g>
+  <text x="962" y="160" fill="#c4bfb6" font-family="ui-monospace, monospace" font-size="22">→</text>
+
+  <g transform="translate(992 108)">
+    <rect width="160" height="88" rx="14" fill="#0c1118" stroke="#2a3544"/>
+    <text x="16" y="34" fill="#8fd4a8" font-family="ui-monospace, Menlo, monospace" font-size="15" font-weight="700">⑤</text>
+    <text x="40" y="34" fill="#f5f0e8" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="16" font-weight="600">검증</text>
+    <text x="16" y="62" fill="#8fa3b8" font-family="ui-monospace, Menlo, monospace" font-size="13">Fact Checker</text>
+  </g>
 </svg>

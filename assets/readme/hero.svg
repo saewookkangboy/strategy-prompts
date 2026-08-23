@@ -1,56 +1,73 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380" role="img" aria-labelledby="title desc">
-  <title id="title">strategy-prompts prompt library</title>
-  <desc id="desc">63 Korean business-framework prompts for ChatGPT GPT-5.6, Claude Opus 5, and Gemini 3.7 Flash — including strategy research, reports, and slide decks</desc>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="400" viewBox="0 0 1200 400" role="img" aria-labelledby="title desc">
+  <title id="title">strategy-prompts — 전략·마케팅·기획·PR·리서치 프롬프트 라이브러리</title>
+  <desc id="desc">한국어 해요체 업무 프레임워크 63개. ChatGPT GPT-5.6, Claude Opus 5, Gemini 3.7 Flash에서 복사해 사용. 프롬프트 블록과 리서치→보고서→슬라이드 체인을 보여 줍니다.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="380" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#0c1118"/>
-      <stop offset="100%" stop-color="#141c28"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0b1016"/>
+      <stop offset="100%" stop-color="#152030"/>
     </linearGradient>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#ffffff" fill-opacity="0.05"/>
     </pattern>
   </defs>
-  <rect width="1200" height="380" rx="24" fill="url(#bg)"/>
-  <rect width="1200" height="380" rx="24" fill="url(#grid)"/>
-  <rect x="56" y="56" width="4" height="52" rx="2" fill="#e8a838"/>
-  <g transform="translate(76 48)">
-    <text x="0" y="28" fill="#8fa3b8" font-family="ui-monospace, Menlo, monospace" font-size="16" letter-spacing="2">AI PROMPT LIBRARY / v2.5.0</text>
-    <text x="0" y="88" fill="#f5f0e8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, sans-serif" font-size="52" font-weight="700">strategy-prompts</text>
-    <text x="0" y="132" fill="#c8d4e0" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, sans-serif" font-size="22" font-weight="500">Research / Report / Slides — 63 prompts</text>
-    <text x="0" y="168" fill="#9aa8b8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, sans-serif" font-size="18">ChatGPT GPT-5.6 / Claude Opus 5 / Gemini 3.7 Flash</text>
-    <text x="0" y="196" fill="#9aa8b8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, sans-serif" font-size="18">Copy / fill brackets / run / Fact Checker</text>
-    <rect x="0" y="220" width="108" height="32" rx="16" fill="#1a2433" stroke="#2d3f54" stroke-width="1"/>
-    <text x="54" y="241" fill="#7eb8ff" font-family="ui-monospace, Menlo, monospace" font-size="13" text-anchor="middle">GPT-5.6 Sol</text>
-    <rect x="118" y="220" width="100" height="32" rx="16" fill="#1a2433" stroke="#2d3f54" stroke-width="1"/>
-    <text x="168" y="241" fill="#d4a574" font-family="ui-monospace, Menlo, monospace" font-size="13" text-anchor="middle">Opus 5</text>
-    <rect x="228" y="220" width="130" height="32" rx="16" fill="#1a2433" stroke="#2d3f54" stroke-width="1"/>
-    <text x="293" y="241" fill="#8fd4a8" font-family="ui-monospace, Menlo, monospace" font-size="13" text-anchor="middle">Gemini 3.7 Flash</text>
+  <rect width="1200" height="400" rx="28" fill="url(#bg)"/>
+  <rect width="1200" height="400" rx="28" fill="url(#dots)"/>
+
+  <!-- left: identity -->
+  <g transform="translate(56 48)">
+    <rect x="0" y="0" width="6" height="56" rx="3" fill="#e8a838"/>
+    <text x="20" y="22" fill="#8fa3b8" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="15" letter-spacing="1.5">PROMPT LIBRARY · v2.5.0</text>
+    <text x="20" y="58" fill="#f5f0e8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif" font-size="48" font-weight="700">strategy-prompts</text>
+    <text x="20" y="100" fill="#d5dee8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif" font-size="22" font-weight="500">전략부터 슬라이드까지, 복사해서 바로 쓰는</text>
+    <text x="20" y="132" fill="#d5dee8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif" font-size="22" font-weight="500">한국어 업무 프레임워크 63개</text>
+    <text x="20" y="172" fill="#9aa8b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif" font-size="17">ChatGPT GPT-5.6 · Claude Opus 5 · Gemini 3.7 Flash</text>
+
+    <!-- model chips -->
+    <rect x="20" y="196" width="118" height="34" rx="17" fill="#1a2433" stroke="#334155" stroke-width="1"/>
+    <text x="79" y="218" text-anchor="middle" fill="#7eb8ff" font-family="ui-monospace, Menlo, monospace" font-size="13">GPT-5.6 Sol</text>
+    <rect x="148" y="196" width="96" height="34" rx="17" fill="#1a2433" stroke="#334155" stroke-width="1"/>
+    <text x="196" y="218" text-anchor="middle" fill="#d4a574" font-family="ui-monospace, Menlo, monospace" font-size="13">Opus 5</text>
+    <rect x="254" y="196" width="136" height="34" rx="17" fill="#1a2433" stroke="#334155" stroke-width="1"/>
+    <text x="322" y="218" text-anchor="middle" fill="#8fd4a8" font-family="ui-monospace, Menlo, monospace" font-size="13">Gemini 3.7 Flash</text>
+
+    <!-- motif line -->
+    <text x="20" y="278" fill="#6b7d90" font-family="ui-monospace, Menlo, monospace" font-size="14">복사 → [ ] 채우기 → 실행 → 8-x3 검증</text>
+    <text x="20" y="310" fill="#e8a838" font-family="ui-monospace, Menlo, monospace" font-size="14">NEW  6-4 → 6-5 → 6-6 → 6-7 → 6-8 → 6-9</text>
+    <text x="20" y="336" fill="#8fa3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif" font-size="15">리서치 · 마이닝 · 보고서 · 덱 · 디자인 · 도식</text>
   </g>
-  <g transform="translate(640 44)">
-    <rect x="0" y="0" width="504" height="292" rx="16" fill="#0a0f15" stroke="#2a3544" stroke-width="1.5"/>
-    <rect x="0" y="0" width="504" height="36" rx="16" fill="#151d28"/>
-    <rect x="0" y="20" width="504" height="16" fill="#151d28"/>
-    <circle cx="20" cy="18" r="5" fill="#ff5f57"/>
-    <circle cx="38" cy="18" r="5" fill="#febc2e"/>
-    <circle cx="56" cy="18" r="5" fill="#28c840"/>
-    <text x="80" y="23" fill="#6b7d90" font-family="ui-monospace, Menlo, monospace" font-size="13">6-6 Report / claude/prompts.md</text>
-    <text x="24" y="68" fill="#7eb8ff" font-family="ui-monospace, Menlo, monospace" font-size="15">Role: Senior strategy analyst. Turn</text>
-    <text x="24" y="92" fill="#7eb8ff" font-family="ui-monospace, Menlo, monospace" font-size="15">data findings into a decision report.</text>
-    <text x="24" y="128" fill="#8fa3b8" font-family="ui-monospace, Menlo, monospace" font-size="14">Include: SCQA, options, recommend,</text>
-    <text x="24" y="152" fill="#8fa3b8" font-family="ui-monospace, Menlo, monospace" font-size="14">slide map for the full deck.</text>
-    <rect x="24" y="188" width="456" height="36" rx="8" fill="#1a2433" stroke="#e8a838" stroke-width="1.5" stroke-dasharray="6 4"/>
-    <text x="40" y="212" fill="#e8a838" font-family="ui-monospace, Menlo, monospace" font-size="15">Decision: [strategic choice to make]</text>
-    <rect x="24" y="244" width="52" height="24" rx="6" fill="#1a2a33" stroke="#3d8a9e" stroke-width="1"/>
-    <text x="50" y="260" fill="#78c8e8" font-family="ui-monospace, Menlo, monospace" font-size="12" text-anchor="middle">6-4</text>
-    <text x="84" y="260" fill="#4a5568" font-family="ui-monospace, monospace" font-size="14">-&gt;</text>
-    <rect x="96" y="244" width="52" height="24" rx="6" fill="#1a2a33" stroke="#3d8a9e" stroke-width="1"/>
-    <text x="122" y="260" fill="#78c8e8" font-family="ui-monospace, monospace" font-size="12" text-anchor="middle">6-6</text>
-    <text x="156" y="260" fill="#4a5568" font-family="ui-monospace, monospace" font-size="14">-&gt;</text>
-    <rect x="168" y="244" width="52" height="24" rx="6" fill="#3d2e14" stroke="#e8a838" stroke-width="1"/>
-    <text x="194" y="260" fill="#e8a838" font-family="ui-monospace, monospace" font-size="12" text-anchor="middle">6-7</text>
-    <text x="236" y="260" fill="#4a5568" font-family="ui-monospace, monospace" font-size="14">-&gt;</text>
-    <rect x="248" y="244" width="52" height="24" rx="6" fill="#1a2e22" stroke="#4a9e6a" stroke-width="1"/>
-    <text x="274" y="260" fill="#8fd4a8" font-family="ui-monospace, monospace" font-size="12" text-anchor="middle">6-9</text>
-    <text x="316" y="260" fill="#6b7d90" font-family="-apple-system, sans-serif" font-size="13">Infographic</text>
+
+  <!-- right: real prompt proof -->
+  <g transform="translate(620 40)">
+    <rect width="524" height="320" rx="18" fill="#080c11" stroke="#2a3544" stroke-width="1.5"/>
+    <rect width="524" height="40" rx="18" fill="#121a24"/>
+    <rect y="24" width="524" height="16" fill="#121a24"/>
+    <circle cx="22" cy="20" r="5" fill="#ff5f57"/>
+    <circle cx="42" cy="20" r="5" fill="#febc2e"/>
+    <circle cx="62" cy="20" r="5" fill="#28c840"/>
+    <text x="88" y="25" fill="#6b7d90" font-family="ui-monospace, Menlo, monospace" font-size="13">6-6 전략 보고서 · claude/prompts.md</text>
+
+    <text x="28" y="78" fill="#7eb8ff" font-family="ui-monospace, Menlo, monospace" font-size="16">역할: 전략 보고서 작성자.</text>
+    <text x="28" y="104" fill="#7eb8ff" font-family="ui-monospace, Menlo, monospace" font-size="16">데이터 인사이트를 이사회용</text>
+    <text x="28" y="130" fill="#7eb8ff" font-family="ui-monospace, Menlo, monospace" font-size="16">SCQA 보고서로 바꿔 주세요.</text>
+
+    <text x="28" y="170" fill="#8fa3b8" font-family="ui-monospace, Menlo, monospace" font-size="14">포함: 메인 메시지 · 옵션 3안 · 권고</text>
+    <text x="28" y="194" fill="#8fa3b8" font-family="ui-monospace, Menlo, monospace" font-size="14">· 리스크 · 30-60-90 액션</text>
+
+    <rect x="28" y="220" width="468" height="40" rx="10" fill="#1a2433" stroke="#e8a838" stroke-width="1.5" stroke-dasharray="7 5"/>
+    <text x="44" y="246" fill="#e8a838" font-family="ui-monospace, Menlo, monospace" font-size="15">의사결정: [지금 내려야 할 결정]</text>
+
+    <rect x="28" y="280" width="56" height="26" rx="6" fill="#1e3a5f" stroke="#3d6a9e"/>
+    <text x="56" y="298" text-anchor="middle" fill="#7eb8ff" font-family="ui-monospace, Menlo, monospace" font-size="12">6-4</text>
+    <text x="96" y="298" fill="#4a5568" font-family="ui-monospace, monospace" font-size="14">→</text>
+    <rect x="114" y="280" width="56" height="26" rx="6" fill="#1e3a5f" stroke="#3d6a9e"/>
+    <text x="142" y="298" text-anchor="middle" fill="#7eb8ff" font-family="ui-monospace, Menlo, monospace" font-size="12">6-5</text>
+    <text x="182" y="298" fill="#4a5568" font-family="ui-monospace, monospace" font-size="14">→</text>
+    <rect x="200" y="280" width="56" height="26" rx="6" fill="#3d2e14" stroke="#e8a838"/>
+    <text x="228" y="298" text-anchor="middle" fill="#e8a838" font-family="ui-monospace, Menlo, monospace" font-size="12">6-6</text>
+    <text x="268" y="298" fill="#4a5568" font-family="ui-monospace, monospace" font-size="14">→</text>
+    <rect x="286" y="280" width="56" height="26" rx="6" fill="#1a2e22" stroke="#4a9e6a"/>
+    <text x="314" y="298" text-anchor="middle" fill="#8fd4a8" font-family="ui-monospace, Menlo, monospace" font-size="12">6-9</text>
+    <text x="360" y="298" fill="#6b7d90" font-family="-apple-system, 'Apple SD Gothic Neo', sans-serif" font-size="13">덱·도식</text>
   </g>
 </svg>
