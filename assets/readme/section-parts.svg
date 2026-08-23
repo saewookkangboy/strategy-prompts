@@ -1,17 +1,18 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="140" viewBox="0 0 1200 140" role="img" aria-labelledby="title desc">
-  <title id="title">Eight domain parts</title>
-  <desc id="desc">Eight parts covering strategy, marketing, commerce, planning, PR, data-research-reports, organization, and appendix prompts</desc>
-  <rect width="1200" height="140" rx="14" fill="#0c1118"/>
-  <text x="56" y="52" fill="#f5f0e8" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, PingFang SC, sans-serif" font-size="32" font-weight="700">8 domains / 63 prompts</text>
-  <text x="56" y="84" fill="#8fa3b8" font-family="-apple-system, sans-serif" font-size="16">Part 6 now covers research → report → slide decks — see INDEX.md</text>
-  <g transform="translate(56 100)">
-    <rect x="0" y="0" width="72" height="28" rx="6" fill="#1e3a5f"/><text x="36" y="19" fill="#7eb8ff" font-family="ui-monospace, monospace" font-size="12" text-anchor="middle">Part 1</text>
-    <rect x="80" y="0" width="72" height="28" rx="6" fill="#1a2e22"/><text x="116" y="19" fill="#8fd4a8" font-family="ui-monospace, monospace" font-size="12" text-anchor="middle">Part 2</text>
-    <rect x="160" y="0" width="72" height="28" rx="6" fill="#2e1a2a"/><text x="196" y="19" fill="#d4a0c8" font-family="ui-monospace, monospace" font-size="12" text-anchor="middle">Part 3</text>
-    <rect x="240" y="0" width="72" height="28" rx="6" fill="#2e2a1a"/><text x="276" y="19" fill="#e8c878" font-family="ui-monospace, monospace" font-size="12" text-anchor="middle">Part 4</text>
-    <rect x="320" y="0" width="72" height="28" rx="6" fill="#1a2433"/><text x="356" y="19" fill="#a8b8c8" font-family="ui-monospace, monospace" font-size="12" text-anchor="middle">Part 5</text>
-    <rect x="400" y="0" width="72" height="28" rx="6" fill="#1a2a33"/><text x="436" y="19" fill="#78c8e8" font-family="ui-monospace, monospace" font-size="12" text-anchor="middle">Part 6</text>
-    <rect x="480" y="0" width="72" height="28" rx="6" fill="#24201a"/><text x="516" y="19" fill="#c8b878" font-family="ui-monospace, monospace" font-size="12" text-anchor="middle">Part 7</text>
-    <rect x="560" y="0" width="72" height="28" rx="6" fill="#3d2e14" stroke="#e8a838" stroke-width="1"/><text x="596" y="19" fill="#e8a838" font-family="ui-monospace, monospace" font-size="12" text-anchor="middle">Part 8</text>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="160" viewBox="0 0 1200 160" role="img" aria-labelledby="title desc">
+  <title id="title">8개 도메인 · 63개 프롬프트</title>
+  <desc id="desc">전략, 마케팅, 커머스, 기획, PR, 데이터·리서치·보고서, 조직, 부록 Part 맵</desc>
+  <rect width="1200" height="160" rx="16" fill="#0c1118"/>
+  <text x="48" y="52" fill="#f5f0e8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif" font-size="32" font-weight="700">8개 도메인 · 63개 프롬프트</text>
+  <text x="48" y="86" fill="#8fa3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif" font-size="16">Part 6는 리서치 → 보고서 → 슬라이드 덱까지 한 체인으로 이어집니다</text>
+  <g transform="translate(48 110)">
+    <rect width="78" height="30" rx="7" fill="#1e3a5f"/><text x="39" y="20" text-anchor="middle" fill="#7eb8ff" font-family="ui-monospace, Menlo, monospace" font-size="12">1 전략</text>
+    <rect x="88" width="90" height="30" rx="7" fill="#1a2e22"/><text x="133" y="20" text-anchor="middle" fill="#8fd4a8" font-family="ui-monospace, Menlo, monospace" font-size="12">2 마케팅</text>
+    <rect x="188" width="90" height="30" rx="7" fill="#2e1a2a"/><text x="233" y="20" text-anchor="middle" fill="#d4a0c8" font-family="ui-monospace, Menlo, monospace" font-size="12">3 커머스</text>
+    <rect x="288" width="78" height="30" rx="7" fill="#2e2a1a"/><text x="327" y="20" text-anchor="middle" fill="#e8c878" font-family="ui-monospace, Menlo, monospace" font-size="12">4 기획</text>
+    <rect x="376" width="62" height="30" rx="7" fill="#1a2433"/><text x="407" y="20" text-anchor="middle" fill="#a8b8c8" font-family="ui-monospace, Menlo, monospace" font-size="12">5 PR</text>
+    <rect x="448" width="118" height="30" rx="7" fill="#1a2a33" stroke="#78c8e8" stroke-width="1"/><text x="507" y="20" text-anchor="middle" fill="#78c8e8" font-family="ui-monospace, Menlo, monospace" font-size="12">6 리서치·덱</text>
+    <rect x="576" width="78" height="30" rx="7" fill="#24201a"/><text x="615" y="20" text-anchor="middle" fill="#c8b878" font-family="ui-monospace, Menlo, monospace" font-size="12">7 조직</text>
+    <rect x="664" width="78" height="30" rx="7" fill="#3d2e14" stroke="#e8a838" stroke-width="1"/><text x="703" y="20" text-anchor="middle" fill="#e8a838" font-family="ui-monospace, Menlo, monospace" font-size="12">8 부록</text>
   </g>
 </svg>
